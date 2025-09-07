@@ -1,8 +1,8 @@
 import Layout from "@/components/layout/layout";
-import Image from "next/image";
 import Link from "next/link";
 import { BookOpen, Users, BarChart, Trophy } from "lucide-react";
 import HeroSlider from "@/components/top/heroSlide";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -86,9 +86,27 @@ export default function Home() {
         </section>
 
         {/* CTA */}
-        <section className="py-20 px-6 bg-indigo-700 text-white text-center">
-          <h2 className="text-3xl font-bold mb-6">さっそく始めてみよう！</h2>
-          <p className="mb-8">無料でダウンロードして、今日から勉強を楽しもう。</p>
+        <section className="py-20 px-6 bg-indigo-700 text-white text-center" id="cta">
+          <div className="flex flex-col items-center mb-8">
+            <Image
+              src="/sutamon.site/icon.png"
+              alt="スタディモンスター アイコン"
+              width={100}
+              height={100}
+              className="mb-4 drop-shadow-lg rounded-lg"
+            />
+            <h2 className="text-4xl md:text-5xl font-extrabold">
+              スタディモンスター
+            </h2>
+            <p className="mt-3 text-lg md:text-xl">
+              勉強をモンスター育成に変える学習アプリ
+            </p>
+          </div>
+
+          <p className="mb-8 mt-6 text-base md:text-lg">
+            無料でダウンロードして、今日から勉強を楽しもう。
+          </p>
+
           <div className="flex justify-center gap-4">
             <Link
               href="#"
@@ -104,6 +122,7 @@ export default function Home() {
             </Link>
           </div>
         </section>
+
 
       </div>
 
