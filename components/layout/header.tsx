@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { APP_NAME } from "@/constants/appInfo"
+import Image from "next/image"
 
 type Props={
     showSidebar:boolean
@@ -9,10 +10,17 @@ const Header = ({showSidebar}:Props) => {
   return (
     <>
         <header className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-sm shadow-sm z-40" style={showSidebar ? {opacity:0} : {opacity:1}}>
-            <div className="container mx-auto flex justify-between items-center px-6 py-4">
+            <div className="container mx-auto flex justify-between items-center px-6 py-2">
                 {/* Logo / App name */}
-                <Link href="/#top" className="text-2xl font-bold text-indigo-600">
-                {APP_NAME}
+                <Link href="/#top" className="">
+                    {/* {APP_NAME} */}
+                    <Image
+                     width={50}
+                     height={50}
+                     src="/sutamon.site/logo.png"
+                     alt="logo"
+                     className="w-28 h-auto"
+                    />
                 </Link>
 
                 {/* Navigation */}

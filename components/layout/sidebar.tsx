@@ -27,11 +27,15 @@ const Sidebar = ({ showSidebar, setShowSidebar }: Props) => {
           <Image
             src="/sutamon.site/icon.png"
             alt="App Icon"
-            className="w-8 h-8 rounded-md"
+            className="w-10 h-10 rounded-md"
           />
-          <span className="text-lg font-bold text-gray-800">
-            {APP_NAME}
-          </span>
+          <Image
+            width={50}
+            height={50}
+            src="/sutamon.site/logo.png"
+            alt="logo"
+            className="w-24 h-auto"
+          />
         </div>
       </div>
 
