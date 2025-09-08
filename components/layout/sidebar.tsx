@@ -1,8 +1,6 @@
 import Modal from "react-modal"
 import Link from "next/link"
-import { X } from "lucide-react"
 import Image from "next/image"
-import { APP_NAME } from "@/constants/appInfo"
 
 Modal.setAppElement('#__next')
 

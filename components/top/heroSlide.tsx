@@ -12,7 +12,7 @@ export default function HeroSlider() {
       <Swiper
         spaceBetween={20}
         centeredSlides={true}
-        slidesPerView={1.4}  // 👈 少しはみ出して表示
+        // slidesPerView={1.2} // ←左右が少し見える
         pagination={{ clickable: true }}
         autoplay={{
           delay: 4000,
@@ -20,20 +20,17 @@ export default function HeroSlider() {
         }}
         modules={[Autoplay, Pagination]}
         className="w-full max-w-5xl mx-auto"
+        autoHeight={true}
       >
-        {["1.png","2.png", "3.png", "4.png", "5.png","6.png"].map((s, idx) => (
-          <SwiperSlide
-            key={idx}
-            className=""
-          >
-            <div className="pb-8">
-                <Image
-                    src={`/sutamon.site/heroSlides/${s}`}
-                    alt={`アプリ画面${idx + 1}`}
-                    width={400}
-                    height={400}
-                    className="w-[90vw] h-auto rounded-xl shadow-lg"
-                    />
+        {["1.png","2.png","3.png","4.png","5.png","6.png"].map((s, idx) => (
+          <SwiperSlide key={idx} className="flex max-w-5xl items-center justify-center">
+            <div className="w-[90vw] aspect-[16/9] max-w-5xl relative">
+              <Image
+                src={`/sutamon.site/heroSlides/${s}`}
+                alt={`アプリ画面${idx + 1}`}
+                fill
+                className="object-cover rounded-xl"
+              />
             </div>
           </SwiperSlide>
         ))}

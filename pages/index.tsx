@@ -9,7 +9,7 @@ export default function Home() {
     <Layout>
       <div className="flex flex-col min-h-screen pt-2">
         {/* Hero / Top */}
-        <section className="flex flex-col items-center text-center bg-gradient-to-b from-indigo-600 to-purple-700 text-white py-24 px-6">
+        <section className="flex flex-col items-center text-center bg-gradient-to-b from-indigo-600 to-purple-700 text-white pt-24 pb-10 px-6">
           <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
             スタディモンスター
           </h1>
