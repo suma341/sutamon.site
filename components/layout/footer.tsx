@@ -3,36 +3,28 @@ import Link from "next/link"
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300 py-10">
-      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="container mx-auto px-6 gap-8">
         {/* 情報セクション */}
         <section>
-          <h2 className="text-sm font-semibold text-gray-400 uppercase mb-4">情報</h2>
-          <ul className="space-y-2">
-            <li>
+          <ul className="space-y-2 flex">
+            <li>| 
               <Link
                 href="/info/privacy"
-                className="hover:text-white transition"
+                className="hover:text-white transition mx-2 text-xs"
               >
                 プライバシーポリシー
               </Link>
             </li>
-            <li>
+            <li>|
               <Link
                 href="/info/accountDelete"
-                className="hover:text-white transition"
+                className="hover:text-white transition mx-2 text-xs"
               >
                 アカウント削除について
               </Link>
             </li>
-          </ul>
-        </section>
-
-        {/* 追加セクション（必要なら） */}
-        <section>
-          <h2 className="text-sm font-semibold text-gray-400 uppercase mb-4">サポート</h2>
-          <ul className="space-y-2">
-            <li>
-              <Link href="/support/contact" className="hover:text-white transition">
+            <li>|
+              <Link href="/support/contact" className="hover:text-white transition mx-2 text-xs">
                 お問い合わせ
               </Link>
             </li>
