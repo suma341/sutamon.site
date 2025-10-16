@@ -15,7 +15,7 @@ export default function Layout({ children }: Props) {
   return (
     <>
       <Head>
-        <meta name="google-site-verification" content="n3rspfUurTSfUKj-M8Rt8e0xOWSbpRes-aJTJr7dao8" />
+        <meta name="google-site-verification" content="L8rmCUlpY3ICdfRIbOdFMa3MSu9bD_OsOOpAHAbVOUM" />
         <title>スタモン</title>
       </Head>
       <div className="flex flex-col min-h-screen">
