@@ -1,0 +1,5 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "com.itako.sutamon",
+               "sha256_cert_fingerprints": ["F2:1F:BB:72:36:BC:13:75:2D:1D:C2:11:FB:39:86:4D:0A:A0:9A:C4:A4:1E:1D:61:7D:3F:E6:99:CD:0D:B4:3A"] }
+}]
