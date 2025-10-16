@@ -87,5 +87,15 @@ body {
 }
 
 p{
-  color:#4a5568
+}
+
+h1{
+  font-size:xx-large;
+  font-weight: bold;
+  margin:1em
+}
+h2{
+  font-size: x-large;
+  font-weight: bold;
+  margin:0.5em
 }

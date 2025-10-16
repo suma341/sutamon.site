@@ -10,10 +10,10 @@ export default function Home() {
       <div className="flex flex-col min-h-screen pt-2">
         {/* Hero / Top */}
         <section className="flex flex-col items-center text-center bg-gradient-to-b from-indigo-600 to-purple-700 text-white pt-24 pb-10 px-6">
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
+          <p className="text-5xl md:text-6xl font-extrabold mb-4">
             スタディモンスター
-          </h1>
-          <p className="text-lg md:text-2xl mb-6">
+          </p>
+          <p className="text-lg md:text-2xl mb-6 text-gray-800">
             勉強をモンスター育成に変える学習アプリ
           </p>
           <div className="flex gap-4 mb-8">

@@ -150,6 +150,9 @@ export default function PrivacyPolicyPage() {
               </ul>
             </section>
           </article>
+          <div className="my-4">
+            利用規約は<Link href="/info/term" className="text-blue-600 hover:underline">こちら</Link>から
+          </div>
         </div>
       </main>
     </Layout>
